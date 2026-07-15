@@ -1,12 +1,11 @@
-let arr = [2, 5, 8, 18, 45, 67];
-let n = arr.length;
+let arr = [12, 31, 34, 56, 76, 88];
 let s = 0;
-let e = n - 1;
-let t = 18;
+let e = arr.length - 1;
 let i = -1;
+t = 88;
 while (t > 0) {
   let mid = Math.floor(s + (e - s) / 2);
-  if (t === arr[mid]) {
+  if (arr[mid] === t) {
     i = mid;
     break;
   } else if (arr[mid] < t) s = mid + 1;
